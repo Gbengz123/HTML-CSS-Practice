@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    background-color: #eafaf1;
+    padding-top: 50px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+}
+
+header .logo{
+    margin-right: auto;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    padding: 0;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-section .showcase{
+    text-align: center;
+    width: 40%;
+    margin: 6em auto;
+}
+
+.main-section .offer-section{
+    display: flex;
+    justify-content: center;
+}
+
+.main-section .offer-section .offer{
+    box-sizing: border-box;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+    flex: 0 1 32%;
+    
+}
+
+.main-section .offer-section #offer-1, #offer-3{
+    min-height: 80vh;
+    margin: auto 0;
+    flex: 0 1 29%;
+}
+
+#offer-1{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 3rem;
+}
+
+#offer-1 div{
+    justify-content: center;
+}
+
+#offer-1 ul{
+    margin: 1rem 0;
+    margin-left: 1rem;
+}
+
+.main-section .offer-section #offer-2{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+}
+
+#offer-2 h4{
+    border: 1px solid;
+    text-align: center;
+}
+
+.showcase-offer, .offer-info{ /* works for #offer-2 and offer-3 */
+    flex: 1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#offer2 .showcase-offer .content{
+    margin: auto 0;
+}
+
+#offer-2 .offer-info{
+    text-align: start;
+}
+
+#offer-2 .offer-info h5{
+    text-align: center;
+}
+
+
+#offer-3 h4{
+    text-align: center;
+}
+
+.quote-section{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-section{
+    min-height: 120vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.info-section .QnA-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    margin-top: 3em;
+}
+
+.QnA-section div{
+    height: 12em;
+    width: 30em;
+    flex: 1 0 25em;
+    border: 4px solid;
+}
+
+footer {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #080c16;
+}
+
+footer .links{
+    display: flex;
+    flex: 1;
+}
+
+.links div, .links table{
+    flex: 1;
+}
+
+.links div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.links table th{
+    text-align: start;
+}
